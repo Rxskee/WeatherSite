@@ -1,0 +1,24 @@
+<!DOCTYPE html> {% load static %}
+<html lang="en">
+<!DOCTYPE html> {% load static %}
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'main_app/index.css' %}">
+  <title>Weather</title>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <label for="city">Введите город:</label>
+        <form action="city/">
+            <input type="text" name="city"/>
+            <input type="submit"/>
+        </form>
+    </form>
+  </div>
+</body>
+</html>
+
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html> {% load static %}
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'main_app/city.css' %}">
+  <title>Погода</title>
+</head>
+<body>
+<div class="weather-container">
+  <h2>Погода сегодня</h2>
+  <div class="weather-info">
+    <div class="temperature">Температура: {{ main.temp }}°C</div>
+    <div class="feels-like">Ощущается как: {{ main.feels_like }}°C</div>
+    <div class="pressure">Давление: {{ main.pressure }} hPa</div>
+    <div class="humidity">Влажность: {{ main.humidity }}%</div>
+    <div class="weather-type">Тип погоды: {{ weather_type }}</div>
+    <div class="wind">Ветер: {{ wind_speed }} м/с, {{ wind_direction }} направление</div>
+  </div>
+</div>
+</body>
+</html>

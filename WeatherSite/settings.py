@@ -4,6 +4,7 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
+WEATHER_API_KEY = os.environ.get('WEATHER_API_KEY')
 DEBUG = True
 ALLOWED_HOSTS = []
 
@@ -15,6 +16,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'main_app.apps.MainAppConfig'
 ]
 
 MIDDLEWARE = [
