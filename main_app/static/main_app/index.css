@@ -1,38 +1,36 @@
 body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    font-family: Arial, sans-serif;
+    font-size: medium;
+    font-weight: bolder;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .container {
-  max-width: 300px;
-  width: 100%;
+    max-width: 300px;
+    width: 100%;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 label {
-  margin-bottom: 10px;
+    align-self: center;
+    margin-bottom: 10px;
 }
 
 input {
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 100%;
-}
-
-/* Адаптация для мобильных устройств */
-@media (max-width: 767px) {
-  .container {
-    padding: 0 10px;
-  }
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    align-self: center;
 }
